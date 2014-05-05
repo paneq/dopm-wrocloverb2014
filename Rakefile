@@ -1,4 +1,4 @@
 desc "Deploy to production server"
 task :deploy do
-  puts `scp -r * pankowecki@pankowecki.pl:/var/lib/pankowecki/current/public/4developers`
+  puts `scp -r * pankowecki@pankowecki.pl:/var/lib/pankowecki/current/public/goderma`
 end
