@@ -22,7 +22,13 @@
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="./css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+ 			if( window.location.search.match( /print-pdf/gi ) ) {
+ 				var link = document.createElement( 'link' );
+ 				link.rel = 'stylesheet';
+ 				link.type = 'text/css';
+ 				link.href = 'css/print/pdf.css';
+ 				document.getElementsByTagName( 'head' )[0].appendChild( link );
+ 			}
 		</script>
 
 		<!--[if lt IE 9]>
@@ -276,6 +282,317 @@
 
         <section data-markdown>
           <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#2d1c55" data-background-transition="slide" -->
+          ## Break
+
+          before part 2
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#86472d" data-background-transition="slide" -->
+          ## Why programmers may help with managers tasks
+
+          * transparent, no seal
+          * just like code
+          * we can learn from best.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#296a7b" data-background-transition="slide" -->
+          ## Why programmers may help with managers tasks
+          
+          * Better ides about scope
+          * Technical limitations are fact
+          * Faster vs smarter
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#161c09" data-background-transition="slide" -->
+          ## Why programmers may help with managers tasks
+
+          * Get to know your client and the domain
+          * DDD-way
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#717828" data-background-transition="slide" -->
+          ## PM as proxy. Do you feel what your customer feels?
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#566a23" data-background-transition="slide" -->
+          ## Programmers attitude to PM'ing
+
+          * Am I productive?
+          * Comfort zone
+          * You value coming to prioritized queue of tickets and clear expectations
+          * TLDR: Someone needs to do it anyway.
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#13343a" data-background-transition="slide" -->
+          ## As PM you can do even more good.
+
+          * What's the value of doing right ticket?
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#40152f" data-background-transition="slide" -->
+          ## PM - developers
+
+          * Power
+          * Responsibility
+          * Time
+          * Money
+          * Trust
+          * Otherwise "happy coders"
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#37a236" data-background-transition="slide" -->
+          ## Clear expectations
+
+          Talk with customers, notify them
+          on the progress, ask for feedback, extract tasks, prioritize
+          tasks with the customer, schedule deadlines, discuss and
+          review billed hours, figure out the business domain and the
+          problem, and many more
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#2e4e8b" data-background-transition="slide" -->
+          ## Programmers love tickets
+          
+          * tasks
+          * issues
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#0d0405" data-background-transition="slide" -->
+          ## Communication as tickets
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#4b2119" data-background-transition="slide" -->
+          ## Create tickets
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#41501b" data-background-transition="slide" -->
+          ## Challenge tickets
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#712673" data-background-transition="slide" -->
+          ## Split tickets
+
+          * slice them all
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#2d4286" data-background-transition="slide" -->
+          ## Customer wants ios app
+
+          * companies
+          * We can do faster
+          * We can do better
+          * We can do cheaper
+          * We can do more features
+          * We will do it safely
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#763c27" data-background-transition="slide" -->
+          ## We can ask about the impact
+          
+          * What are you trying to achieve?
+          * Money?
+          * Social?
+          * Doctors?
+          * Patients?
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#8faf3a" data-background-transition="slide" -->
+          ## Slice
+          
+          * doctor
+          * patient
+          * different needs and expectations
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#3b8db1" data-background-transition="slide" -->
+          ## Slice
+          
+          * doctor in Berlin
+          * doc in Stuttgart
+          * different needs and expectations
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#42b53c" data-background-transition="slide" -->
+          ## Slice
+          
+          * doctor at home
+          * doctor at work
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#263d71" data-background-transition="slide" -->
+          ## Slice
+          
+          * younger doctor
+          * older doctor
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#9f7f35" data-background-transition="slide" -->
+          ## Slice
+          
+          * doctor in private clinic
+          * doctor in public hospital
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#263d71" data-background-transition="slide" -->
+          ## Slice
+          
+          * dermatologist
+          * endocrinologist
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#1e5a56" data-background-transition="slide" -->
+          ## 300 tickets?
+
+          * 10 goals X 30 tickets
+          * which goal do you want?
+          * maybe different/cheaper way to achieve it?
+          </script>
+        </section>
+
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#546cc6" data-background-transition="slide" -->
+          ## 300 tickets?
+
+          * 30 personas x 10 tickets?
+          * which persona are you trying to satisfy?
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#216426" data-background-transition="slide" -->
+          ## Goal?
+
+          * slice it
+          * experiment
+          * measure
+          * verify if impact achieved
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#2d4286" data-background-transition="slide" -->
+          ## Task?
+
+          * question assumptions behind it
+          * ios app? - no need. there were other ways
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#0d0405" data-background-transition="slide" -->
+          ## Independent developer capable of decisions
+
+          * I was trying to do feature X. Turned out to be harder than I thought
+          * Drop it. Do Y instead.
+          * Both try to achieve goal A. Y is easer&cheaper.
+          * Happy customer
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#4b2119" data-background-transition="slide" -->
+          ## Are we trying solve too many problems with software?
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+          <!-- .slide: data-transition="linear" data-background="#41501b" data-background-transition="slide" -->
+          ## Customer does not come to you with feature X
+
+          * Customer goes to you with problem A
+          * or goal 1
+          </script>
+        </section>
+
+        <section data-transition="linear" data-background="#37a236" data-background-transition="slide">
+          <h2>Impact mapping</h2>
+          <img src="./map.png">
+          <p>
+            <ul>
+              <li>Why - Goal</li>
+              <li>Who - Actors</li>
+              <li>How - Impact</li>
+              <li>What - deliverables/feature/activities</li>
+            </ul>
+          </p>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
           <!-- .slide: data-transition="linear" data-background="#161c43" data-background-transition="slide" -->
           ## Interested?
 
@@ -288,24 +605,14 @@
 
         <section data-markdown>
           <script type="text/template">
-          <!-- .slide: data-transition="linear" data-background="#216426" data-background-transition="slide" -->
-          ## 25% discount
-
-          * use coupon 4DEVELOPERS
-          * https://arkency.dpdcart.com/
-          </script>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
           <!-- .slide: data-transition="linear" data-background="#974332" data-background-transition="slide" -->
-          ## Thank you 4DEVELOPERS
+          ## Thank you
 
-          * http://robert.pankowecki.pl/4developers/index.html
           * http://blog.arkency.com/2013/09/story-of-size-1/
           * http://blog.arkency.com/2013/10/refactor-to-remote-leave-tasks-unassigned/
           * http://blog.arkency.com/2013/10/take-the-first-task/
           * http://blog.arkency.com/2013/11/chronos-and-kairos/
+          * http://impactmapping.org/
           </script>
         </section>
 			</div>
